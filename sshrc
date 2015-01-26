@@ -1,0 +1,2 @@
+ip=`echo $SSH_CONNECTION | cut -d " " -f 1`
+php -f /opt/ssh_login.php $ip &
