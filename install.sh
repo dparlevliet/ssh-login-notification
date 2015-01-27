@@ -1,6 +1,6 @@
-#!/bin/bash
-wget --no-check-certificate https://raw.githubusercontent.com/dparlevliet/ssh-login-notification/master/sshrc -O /etc/ssh/sshrc
-wget --no-check-certificate https://raw.githubusercontent.com/dparlevliet/ssh-login-notification/master/ssh_login.php -O /opt/ssh_login.php
+#!/bin/sh
+wget -q -O - "$@" --no-check-certificate https://raw.githubusercontent.com/dparlevliet/ssh-login-notification/master/sshrc -O /etc/ssh/sshrc
+wget -q -O - "$@" --no-check-certificate https://raw.githubusercontent.com/dparlevliet/ssh-login-notification/master/ssh_login.php -O /opt/ssh_login.php
 
 echo '** INSTALL COMPLETE ***********************************************************';
 if [ -f $FILE ]; then
