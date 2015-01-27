@@ -12,4 +12,4 @@ updating your version to the newest version.
 Requirements
 ============
 * PHP5 CLI
-* PHP5 mail (sendmail)
+* PHP5 mail (postfix)
